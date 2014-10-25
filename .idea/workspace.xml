@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="35" selection-start="200" selection-end="200" vertical-scroll-proportion="0.058441557" vertical-offset="45" max-vertical-offset="885">
+            <state line="6" column="35" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -90,14 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-              <folding>
-                <marker date="1414277787000" expanded="true" signature="30:1671" placeholder="do ... end" />
-                <marker date="1414277787000" expanded="true" signature="106:1667" placeholder="#..." />
-              </folding>
+            <state line="11" column="27" selection-start="331" selection-end="331" vertical-scroll-proportion="0.1724138" vertical-offset="30" max-vertical-offset="1020">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,11 +140,11 @@
         <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -757,16 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding>
-            <marker date="1414277787000" expanded="true" signature="30:1671" placeholder="do ... end" />
-            <marker date="1414277787000" expanded="true" signature="106:1667" placeholder="#..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="39" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -812,7 +799,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="200" selection-end="200" vertical-scroll-proportion="0.058441557" vertical-offset="45" max-vertical-offset="885">
+        <state line="6" column="35" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="331" selection-end="331" vertical-scroll-proportion="0.1724138" vertical-offset="30" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
