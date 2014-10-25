@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="35" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="885">
+            <state line="41" column="11" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.45454547" vertical-offset="390" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -90,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="26" selection-start="358" selection-end="358" vertical-scroll-proportion="0.23622048" vertical-offset="75" max-vertical-offset="1050">
+            <state line="13" column="26" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -147,8 +147,8 @@
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -802,16 +802,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="885">
+        <state line="13" column="26" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="358" selection-end="358" vertical-scroll-proportion="0.23622048" vertical-offset="75" max-vertical-offset="1050">
+        <state line="41" column="11" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.45454547" vertical-offset="390" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
