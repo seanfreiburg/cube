@@ -16,11 +16,11 @@
       <tr>
         <td><%= post.user_id %></td>
         <td><%= post.text %></td>
-        <td><%= post.img_url %></td>
+        <td><%= post.img_name%></td>
         <td><%= post.location %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', user_post_path(post.user_id,post) %></td>
+        <td><%= link_to 'Edit', edit_user_post_path(post.user_id,post) %></td>
+        <td><%= link_to 'Destroy', user_post_path(post.user_id,post) , method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Post', new_user_post_path %>
