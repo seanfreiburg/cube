@@ -26,7 +26,16 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="12" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="855">
+            <state line="6" column="8" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="14" selection-start="501" selection-end="501" vertical-scroll-proportion="0.40229884" vertical-offset="0" max-vertical-offset="783">
               <folding />
             </state>
           </provider>
@@ -45,7 +54,9 @@
         <entry file="file://$PROJECT_DIR$/config/initializers/azure_storage.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-              <folding />
+              <folding>
+                <marker date="1414272761000" expanded="true" signature="16:255" placeholder="do ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,7 +65,9 @@
         <entry file="file://$PROJECT_DIR$/app/models/post.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="39" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <folding />
+              <folding>
+                <marker date="1414273503000" expanded="true" signature="10:457" placeholder=" ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,15 +76,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="20" selection-start="199" selection-end="199" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
@@ -90,7 +94,10 @@
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="20" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-              <folding />
+              <folding>
+                <marker date="1414277787000" expanded="true" signature="30:1671" placeholder="do ... end" />
+                <marker date="1414277787000" expanded="true" signature="106:1667" placeholder="#..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,11 +111,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="33" selection-start="757" selection-end="757" vertical-scroll-proportion="0.6032172" vertical-offset="0" max-vertical-offset="746">
-              <folding />
+            <state line="30" column="33" selection-start="757" selection-end="757" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="555">
+              <folding>
+                <marker date="1414278612000" expanded="true" signature="30:715" placeholder="..." />
+                <marker date="1414278612000" expanded="true" signature="40:185" placeholder="..." />
+                <marker date="1414278612000" expanded="true" signature="49:174" placeholder="..." />
+                <marker date="1414278612000" expanded="true" signature="196:706" placeholder="..." />
+                <marker date="1414278612000" expanded="true" signature="239:681" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,12 +141,13 @@
         <option value="$PROJECT_DIR$/config/initializers/azure_storage.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -368,6 +382,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: onehundred">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -515,6 +530,12 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="test: onehundred" type="RakeRunConfigurationType" factoryName="Rake">
@@ -716,14 +737,9 @@
     <entry file="file://$PROJECT_DIR$/config/initializers/azure_storage.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="12" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="855">
-          <folding />
+          <folding>
+            <marker date="1414272761000" expanded="true" signature="16:255" placeholder="do ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -744,14 +760,19 @@
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="20" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
+          <folding>
+            <marker date="1414277787000" expanded="true" signature="30:1671" placeholder="do ... end" />
+            <marker date="1414277787000" expanded="true" signature="106:1667" placeholder="#..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="39" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <folding />
+          <folding>
+            <marker date="1414273503000" expanded="true" signature="10:457" placeholder=" ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -771,7 +792,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="33" selection-start="757" selection-end="757" vertical-scroll-proportion="0.6032172" vertical-offset="0" max-vertical-offset="746">
+        <state line="30" column="33" selection-start="757" selection-end="757" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="555">
+          <folding>
+            <marker date="1414278612000" expanded="true" signature="30:715" placeholder="..." />
+            <marker date="1414278612000" expanded="true" signature="40:185" placeholder="..." />
+            <marker date="1414278612000" expanded="true" signature="49:174" placeholder="..." />
+            <marker date="1414278612000" expanded="true" signature="196:706" placeholder="..." />
+            <marker date="1414278612000" expanded="true" signature="239:681" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="14" selection-start="501" selection-end="501" vertical-scroll-proportion="0.40229884" vertical-offset="0" max-vertical-offset="783">
           <folding />
         </state>
       </provider>
