@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
 
 
-gem 'azure', git: 'git@github.com:Azure/azure-sdk-for-ruby.git'
+gem 'azure' #, git: 'git@github.com:Azure/azure-sdk-for-ruby.git'
 
 group :development do
   gem "better_errors"
