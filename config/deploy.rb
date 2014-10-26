@@ -1,6 +1,7 @@
 require "bundler/capistrano"
 #load 'lib/deploy/seed' #include if you need to load seed data with cap deploy:seed
 
+set :default_shell, '/bin/bash -l'
 set :stages, %w(staging production)
 set :default_stage, "production"
 require 'capistrano/ext/multistage'
