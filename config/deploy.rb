@@ -1,4 +1,5 @@
-
+require "rvm/capistrano"
+require "bundler/capistrano"
 #load 'lib/deploy/seed' #include if you need to load seed data with cap deploy:seed
 
 set :stages, %w(staging production)
@@ -11,8 +12,8 @@ set :application, "onehundred"
 
 set :use_sudo, false
 
-default_environment["GEM_PATH"] ="/home/deployer/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1:/home/deployer/.rbenv/shims/ruby"
-default_environment["PATH"] = "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$HOME/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1:$PATH"
+#default_environment["GEM_PATH"] ="/home/deployer/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1:/home/deployer/.rbenv/shims/ruby"
+#default_environment["PATH"] = "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$HOME/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1:$PATH"
 
 set :deploy_via, :remote_cache
 
@@ -22,7 +23,7 @@ after "deploy:cleanup", "deploy:seed"
 
 set :scm, "git"
 set :scm_verbose, true
-set :repository, "https://github.com/seanfreiburg/onehundred.git"
+set :repository, "git@github.com:seanfreiburg/onehundred.git"
 
 
 default_run_options[:pty] = true # Must be set for the password prompt from git to work
