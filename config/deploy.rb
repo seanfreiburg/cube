@@ -5,8 +5,14 @@ set :default_shell, '/bin/bash -l'
 set :stages, %w(staging production)
 set :default_stage, "production"
 require 'capistrano/ext/multistage'
-server "198.199.104.207", :app, :web, :db, :primary => true
-set :user, "root" # The server's user for deploys
+server "shpe-uiuc.org", :app, :web, :db, :primary => true
+set :user, "deployer" # The server's user for deploys
+set :scm_passphrase, "0ok9ij8uh" # The deploy user's password
+
+set :use_sudo, false
+
+default_environment["GEM_PATH"] ="/home/deployer/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1:/home/deployer/.rbenv/shims/ruby"
+default_environment["PATH"] = "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$HOME/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1:$PATH"
 
 set :application, "onehundred"
 
