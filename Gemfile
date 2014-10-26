@@ -39,7 +39,7 @@ gem 'devise'
 
 
 gem 'capistrano', '2.15.5'
-gem 'rvm-capistrano'
+
 
 
 # Use ActiveModel has_secure_password
