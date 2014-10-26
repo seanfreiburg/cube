@@ -1,4 +1,4 @@
-require "bundler/capistrano"
+
 #load 'lib/deploy/seed' #include if you need to load seed data with cap deploy:seed
 
 set :stages, %w(staging production)
