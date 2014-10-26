@@ -21,5 +21,10 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+    adapter:  mysql2
+    database: app
+    pool: 5
+    username: adminrkKXdMF
+    password: eI1u2hySvaCT
+    host:  mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
+    timeout: 5000

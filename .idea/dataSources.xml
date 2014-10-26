@@ -23,8 +23,10 @@
     </data-source>
     <data-source source="LOCAL" name="Rails onehundred: production" uuid="aa98609a-601b-4c0b-818a-a5e650d23c69">
       <driver-ref>postgresql</driver-ref>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:production_baseball</jdbc-url>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT//app</jdbc-url>
+      <user-name>adminrkKXdMF</user-name>
+      <user-password>dfcfdfe3df9bdfdfdf98dfc2dfd3dff9dfdcdfcbdfe9dffe</user-password>
       <libraries />
     </data-source>
   </component>
