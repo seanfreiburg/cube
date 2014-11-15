@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails onehundred: development" uuid="ce4b19c5-6e3c-4c41-a7ff-e566a57677e5" />
+    <data-source name="Rails onehundred: test" uuid="5186c852-cb02-4ba1-af78-6c3ec8572bbe" />
+    <data-source name="Rails onehundred: production" uuid="aa98609a-601b-4c0b-818a-a5e650d23c69" />
+  </component>
+</project>
