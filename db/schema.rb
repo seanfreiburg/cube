@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20141115101858) do
 
   create_table "commands", force: true do |t|
     t.integer  "user_id"
-    t.integer  "action_id"
+    t.integer  "command_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "sent"

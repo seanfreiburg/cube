@@ -34,7 +34,7 @@ class CommandsController < ApplicationController
 
 # Never trust parameters from the scary internet, only allow the white list through.
   def command_params
-    params.permit(:user_id, :action_id)
+    params.permit(:user_id, :command_id)
   end
 
 end
