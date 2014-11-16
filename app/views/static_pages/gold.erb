@@ -1,0 +1,109 @@
+<h1>Get the gold!</h1>
+
+<p>Json Messages</p>
+<p id="1">{}</p>
+<p id="2">{}</p>
+<p>Scores</p>
+Red-<span id="score-1">0</span>
+Blue-<span id="score-2">0</span>
+
+
+
+<script>
+
+    var takeInput = function (user_id, command_id) {
+        var square = window.squares[user_id];
+        if (command_id == 1) {
+            if ((square.x + 10) < window.crafty_width) {
+                square.x += 10;
+            }
+
+        }
+        else if (command_id == 2) {
+            if ((square.x - 10) > 0) {
+                square.x -= 10;
+            }
+        }
+        else if (command_id == 3) {
+            if ((square.y + 10) < window.crafty_height) {
+                square.y += 10;
+            }
+
+        }
+        else if (command_id == 4) {
+            if ((square.y - 10) > 0) {
+                square.y -= 10;
+            }
+        }
+        else {
+            $("#" + user_id).append("<h1>FUCK</h1>" + command_id)
+        }
+    };
+
+
+
+
+
+    var onTimerTick = function () {
+        var data = [doAjax(1), doAjax(2)];
+        data.forEach(function (element, index, array) {
+            $("#" + element[0]["user_id"]).html(JSON.stringify(element[0], null, "  "));
+            if (element.length > 0) {
+                takeInput(element[0]["user_id"], element[0]["command_id"])
+            }
+        });
+
+
+    };
+
+    window.crafty_width = 1300;
+    window.crafty_height = 500;
+    window.squares = {};
+
+    var poll_time = 200;
+    window.score = {"1": 0, "2": 0};
+    Crafty.init(window.crafty_width, window.crafty_height);
+    Crafty.background('#000');
+    window.squares["1"] = (Crafty.e('Box,2D, Canvas, Color, Collision').attr({
+        x: 300,
+        y: 300,
+        w: 10,
+        h: 10
+    }).color('red').origin("center")
+    );
+
+
+    window.squares["2"] = (Crafty.e('Box,2D, Canvas, Color, Collision').attr({
+        x: 400,
+        y: 400,
+        w: 10,
+        h: 10
+    }).color('blue').origin("center")
+    );
+
+
+    window.gold = Crafty.e('Box, 2D, Canvas, Color, Collision').attr({
+        x: 600,
+        y: 300,
+        w: 10,
+        h: 10
+    }).onHit("2D", function (data) {
+        if (data[0].obj == window.squares["1"]) {
+            window.score["1"] += 1;
+            $("#score-1").html(window.score["1"])
+        }
+        if (data[0].obj == window.squares["2"]) {
+            window.score["2"] += 1;
+            $("#score-2").html(window.score["2"])
+        }
+        window.gold.x = randomIntFromInterval(100,window.crafty_width -100);
+        window.gold.y = randomIntFromInterval(100,window.crafty_height -100);
+
+    }).color('yellow').origin("center");
+
+
+    setInterval(onTimerTick, poll_time); // 33 milliseconds = ~ 30 frames per sec
+
+
+</script>
+

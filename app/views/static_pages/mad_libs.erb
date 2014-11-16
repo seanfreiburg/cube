@@ -1,0 +1,86 @@
+<h1>Mad libs</h1>
+
+<h2 id="word-type"></h2>
+
+<div id="options"></div>
+
+
+<p id="sentence"></p>
+<script>
+
+    jQuery.fn.delay = function(time,func){
+        this.each(function(){
+            setTimeout(func,time);
+        });
+
+        return this;
+    };
+
+    var sum = function (previousValue, currentValue, index, array) {
+        return previousValue + currentValue;
+    };
+
+    var askFor = function (type, list) {
+        $("#word-type").html("<p>" + type + "</p>");
+        $("#options").html("");
+        words = [];
+        for (var i = 0; i < 6; i++) {
+            words.push(list[Math.floor(Math.random() * list.length)]);
+            $("#options").append("<p>" + (i + 1) + " " + words[i] + "</p> ");
+        }
+        votes = {"1": -1, "2": -1};
+        while (votes["1"] == -1 || votes["2"] == -1) {
+            if (votes["1"] == -1) {
+                var data = doAjax(1)[0];
+                if (data) {
+                    votes["1"] = data["command_id"]
+                }
+            }
+            if (votes["2"] == -1) {
+                var data = doAjax(2)[0];
+                if (data) {
+                    votes["2"] = data["command_id"];
+                }
+            }
+
+        }
+        console.log(votes[randomIntFromInterval(1,2)]);
+        return words[votes[randomIntFromInterval(1,2)]];
+
+    };
+
+    $(document).ready(function () {
+        var verbs = ['run', 'walk', 'kick', 'eat', 'drink', 'kill'];
+        var nouns = ['dog', 'woman', 'cat', 'man', 'Helen Keller', 'Mother'];
+        var adjectives = ['fat', 'slow', 'little', 'sexy', 'drunk', 'red'];
+        var str = "%noun% %verb%s the %adjective% %noun% %adjective% %verb%";
+        var nounExpression = /%noun%/;
+        var verbExpression = /%verb%/;
+        var adjectiveExpression = /%adjective%/;
+
+        while (str.search(nounExpression) > -1) {
+            str = str.replace(nounExpression, function () {
+                return askFor("noun", nouns);
+
+
+            });
+        }
+
+        while (str.search(verbExpression) > -1) {
+            str = str.replace(verbExpression, function () {
+                return askFor("verb", verbs);
+
+            });
+        }
+
+        while (str.search(adjectiveExpression) > -1) {
+            str = str.replace(adjectiveExpression, function () {
+                return askFor("adjective", adjectives);
+
+            });
+        }
+
+
+        $("#sentence").html(str);
+    })
+</script>

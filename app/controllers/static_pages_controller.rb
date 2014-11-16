@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
 
   end
 
-  def beer_pong
+  def mad_libs
 
   end
 end
